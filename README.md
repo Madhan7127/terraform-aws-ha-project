@@ -62,3 +62,35 @@ terraform-aws-ha-project/
 ├── nat-gateway.tf
 ├── route-tables.tf
 └── README.md
+## Deployment Commands
+
+```bash
+terraform init
+terraform fmt -recursive
+terraform validate
+terraform plan
+terraform apply
+Remote State Management
+- Amazon S3 remote backend
+- State encryption enabled
+- Bucket versioning enabled
+- Public access blocked
+- Native S3 state locking enabled
+High Availability
+- Two Availability Zones
+- Public and private subnets
+- Application Load Balancer
+- Auto Scaling Group
+- Multi-AZ Amazon RDS
+Security
+- IAM-based AWS access
+- Separate security groups
+- Private RDS database
+- Encrypted remote Terraform state
+- Sensitive variables excluded from Git
+Project Status
+Core infrastructure deployment, Terraform module migration, remote state configuration and GitHub upload completed.
+Author
+Madhan Saai
+
+Cloud DevOps Engineer | AWS | Terraform | Docker | Kubernetes
